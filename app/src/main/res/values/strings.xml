@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="input_text">Input: </string>
+    <string name="output_text">Output: </string>
+    <string name="convert_currencies">Convert</string>
+    <string name="update_data">Update Data</string>
+    <string name="my_key">a167540f070cc70364b3cb466da0b57d</string>
+</resources>

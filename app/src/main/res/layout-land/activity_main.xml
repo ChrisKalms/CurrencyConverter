@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20sp"
+    android:id="@+id/layout">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/input"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"
+        android:inputType="numberDecimal"/>
+    <NumberPicker
+        android:id="@+id/convert_from_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/shim"
+        android:layout_below="@id/input_text"
+        android:layout_above="@id/convert_currency_button"
+        android:layout_marginBottom="10sp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/border"
+        />
+
+    <NumberPicker
+        android:id="@+id/convert_to_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@id/shim"
+        android:layout_below="@id/input_text"
+        android:layout_above="@id/convert_currency_button"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/text_view_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/output_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/output_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_view_output"
+        android:layout_toLeftOf="@id/shim"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5sp"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/shim"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        />
+
+        <Button
+            android:id="@+id/convert_currency_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5sp"
+            android:background="@drawable/border"
+            android:text="@string/convert_currencies"
+            android:layout_toRightOf="@id/shim"
+            android:textSize="15sp" />
+
+
+
+</RelativeLayout>

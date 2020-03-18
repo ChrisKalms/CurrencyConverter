@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Currency Converter - HELP</title>
+  </head>
+  <body>
+    <h2> Currency Converter Help File</h2>
+    <h3>Getting Started</h3>
+    <h4>Connect to Data Source</h4>
+      <p>Go to https://fixer.io/signup/free and fill in the prompts. <br>
+        After getting your free API key, go to Settings -> API KEY, and add the key to the text field.
+      </p>
+    <h4>Getting Data</h4>
+      <p>To load data from the api, open the menu and select the 'Update' button.<br>
+          NOTE: The free fixer API only updates every hour, so to save you going over your monthly
+          limit, the application will only allow you to update every 30 minutes. Trying to update more
+          often will prompt a popup stating "Currencies are up to date".<br>
+        After loading data, go to Settings -> Choose Conversion Time, and select the top result
+        to bring the loaded data into the Application. <br>
+          NOTE: The application saves the currencies each time you update. If for some reason you
+          need to access a previous conversion time you may do so here and it will be loaded into
+          the application for you.
+      </p>
+    <h4>Selecting Currencies</h4>
+      <p>To select the relevant currencies to convert between, go to Settings -> Choose Currencies, and
+        choose all of the currencies that you need to convert between. <br>
+          NOTE: If there are no codes selected, the application will default to AUD and USD.
+      </p>
+    <h4>Converting</h4>
+      <ol>
+        <li>Put value to convert into input field</li>
+        <li>Select the code to convert from in first picker</li>
+        <li>Select the code to convert to in second picker</li>
+        <li>Select the Convert button</li>
+        <li>Output field will be filled with the converted value</li>
+      </ol>
+
+    <h3>Troubleshooting</h3>
+      <ul>
+          <li>
+              "No Data Available" : The database has not been filled, and so the application has no
+              data to work with. You need to select 'Update' button in the menu.
+          </li>
+          <li>
+              "Cannot retrieve data" : The application is unable to get data. There are two possible causes
+              for this issue.
+              <ol>
+                  <li>The API Key hasn't been added to the Settings or is wrong. You need to add
+                      or fix the API key so that it can connect to the data source.
+                  </li>
+                  <li>
+                      The application doesn't have access to the internet. Check your phones mobile data
+                      or wifi is connected.
+                  </li>
+              </ol>
+          </li>
+      </ul>
+  </body>
+</html>

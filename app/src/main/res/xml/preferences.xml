@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@+id/pref_screen">
+    <ListPreference
+        android:key="historical_list"
+        android:title="Select Conversion Time"
+        android:entryValues="@array/settings_entries"
+        android:entries="@array/settings_values"
+        />
+    <MultiSelectListPreference
+        android:key="multi_codes"
+        android:title="Select Currencies"
+        android:entries="@array/settings_values"
+        android:entryValues="@array/settings_entries"
+        />
+    <EditTextPreference
+        android:key="api_key"
+        android:title="API Key"
+        />
+</PreferenceScreen>
